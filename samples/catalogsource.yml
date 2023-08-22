@@ -1,0 +1,16 @@
+---
+apiVersion: operators.coreos.com/v1alpha1
+kind: CatalogSource
+metadata:
+  name: eryalito
+  namespace: olm
+spec:
+  displayName: Eryalito Operators
+  grpcPodConfig:
+    securityContextConfig: restricted
+  image: ghcr.io/eryalito/operator-catalog:latest
+  publisher: eryalito.dev
+  sourceType: grpc
+  updateStrategy:
+    registryPoll:
+      interval: 60m
