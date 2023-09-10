@@ -4,3 +4,5 @@ GenerateMinorChannels: false
 Stable:
   Bundles:
   - Image: ghcr.io/eryalito/kubensync-operator-bundle:v0.0.1
+  - Image: ghcr.io/eryalito/kubensync-operator-bundle:v0.0.2
+    
